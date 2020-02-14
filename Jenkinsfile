@@ -2,7 +2,7 @@ def COLOR_MAP = ['SUCCESS': 'good', 'FAILURE': 'danger', 'UNSTABLE': 'danger', '
 pipeline {
     agent {
       docker {
-        image "raphaelcastro35/guide_ruby_gems:v.1"
+        image "raphaelcastro35/gems_ruby"
       }
     }
     stages {
