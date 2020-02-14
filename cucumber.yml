@@ -1,0 +1,8 @@
+---
+  default: -p pretty -p html -p json 
+
+  source: --no-source
+  progress: --format progress
+  pretty: --format pretty
+  html: --format html --out=log/report.html
+  json: --format json --out=log/report.json
