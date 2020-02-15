@@ -1,0 +1,126 @@
+[
+  {
+    "uri": "features/specs/consultar.feature",
+    "id": "consultar-os-dados-de-um-endereço-a-partir-de-um-cep",
+    "keyword": "Funcionalidade",
+    "name": "Consultar os dados de um endereço a partir de um CEP",
+    "description": "  Como um usuário do sistema\n  Eu quero realizar requisições na API\n  Para que possa consultar os dados do endereço",
+    "line": 3,
+    "elements": [
+      {
+        "id": "consultar-os-dados-de-um-endereço-a-partir-de-um-cep;consulta-cep-válido",
+        "keyword": "Cenário",
+        "name": "Consulta CEP válido",
+        "description": "",
+        "line": 8,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14900
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "o endereço da API para consultar o CEP \"02321170\"",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/consultar_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39500
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "realizar a requisição GET",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/consultar_steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 614041900
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "a API irá retornar os dados da consulta com o código do IBGE \"3550308\"",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/consultar_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28757700
+            }
+          }
+        ]
+      },
+      {
+        "id": "consultar-os-dados-de-um-endereço-a-partir-de-um-cep;consulta-cep-inválido",
+        "keyword": "Cenário",
+        "name": "Consulta CEP inválido",
+        "description": "",
+        "line": 13,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53800
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "o endereço da API para consultar o CEP \"00000001\"",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/consultar_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121500
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "realizar a requisição GET",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/consultar_steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1310103600
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "a API irá retornar erro no corpo da resposta",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/consultar_steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 396300
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

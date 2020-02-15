@@ -1,7 +1,6 @@
 .byebug_history
 debug.log
 log/*.html
-log/*.json
 log/*.png
 log/screenshots/*
 Gemfile.lock
