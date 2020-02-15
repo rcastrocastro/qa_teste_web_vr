@@ -1,8 +1,5 @@
 .byebug_history
 debug.log
-log/*.html
-log/*.png
-log/screenshots/*
 Gemfile.lock
 features/support/config/environments/connection_data.yml
 features/support/fixtures/files/excel/model_transfer_clients.xlsx

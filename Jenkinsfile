@@ -17,6 +17,7 @@ pipeline {
             }
             post {
                 always {
+                    build 'QA_VR'
                     cucumber failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', jsonReportDirectory: 'log', pendingStepsNumber: -1, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
                     slackSend channel: "#jenkins", 
                         color: COLOR_MAP[currentBuild.currentResult],
