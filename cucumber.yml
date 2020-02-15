@@ -1,5 +1,5 @@
 ---
-  default: -p pretty -p json 
+  default: -p pretty -p json -p html
 
   source: --no-source
   progress: --format progress
