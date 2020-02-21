@@ -1,14 +1,14 @@
-before_script: 
+before_script:
  - gem install bundler --no-document
 
 image: raphaelcastro35/ruby_gems_fleury:0.2.0
 
 test:
- stage: test
- script:
-  - bundle install
-  - blundle exec cucumber
- artifacts:
-  when: always
-  paths:
-   - log/report.html
+  stage: test
+  script:
+    - bundle install
+    - bundle exec cucumber
+  artifacts:
+    when: always
+    paths:
+      - log/report.html
