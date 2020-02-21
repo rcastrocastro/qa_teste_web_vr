@@ -12,6 +12,6 @@ jobs:
           name: Execute all features scenarios
           command: bundle exec cucumber 
       - store_test_results:
-          path: ~/log/report.html
+          path: log/report.html
       - store_artifacts:
-          path: ~/log/report.html
+          path: log/report.html
