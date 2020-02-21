@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/qa_teste_web_vr
+    docker:
+      - image: raphaelcastro35/ruby_gems_fleury:0.2.0
+    steps:
+      - checkout
+    steps:
+      - run: 
+          name: Bundle install
+          command: bundle install --path vendor/bundle
+    steps:
+      - run: 
+          name: Execute all features scenarios
+          command: bundle exec cucumber 
+      - store_test_results:
+          path: ~/log/report.html
+      - store_artifacts:
+          path: ~/log/report.html
