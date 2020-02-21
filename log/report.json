@@ -17,26 +17,30 @@
         "before": [
           {
             "match": {
-              "location": "features/support/hooks.rb:1"
+              "location": "features/support/hooks.rb:4"
             },
             "result": {
               "status": "passed",
-              "duration": 26800
-            }
+              "duration": 16000
+            },
+            "status": "passed",
+            "duration": 16000
           }
         ],
         "steps": [
           {
             "keyword": "Dado ",
-            "name": "o endereço da API para consultar o CEP \"02321170\"",
+            "name": "o endereço da API para consultar o CEP &quot;02321170&quot;",
             "line": 9,
             "match": {
               "location": "features/step_definitions/consultar_steps.rb:1"
             },
             "result": {
               "status": "passed",
-              "duration": 46100
-            }
+              "duration": 49900
+            },
+            "status": "passed",
+            "duration": 49900
           },
           {
             "keyword": "Quando ",
@@ -47,22 +51,31 @@
             },
             "result": {
               "status": "passed",
-              "duration": 675106400
-            }
+              "duration": 860788700
+            },
+            "status": "passed",
+            "duration": 860788700
           },
           {
             "keyword": "Então ",
-            "name": "a API irá retornar os dados da consulta com o código do IBGE \"3550308\"",
+            "name": "a API irá retornar os dados da consulta com o código do IBGE &quot;3550308&quot;",
             "line": 11,
             "match": {
               "location": "features/step_definitions/consultar_steps.rb:10"
             },
             "result": {
               "status": "passed",
-              "duration": 33965600
-            }
+              "duration": 26450800
+            },
+            "status": "passed",
+            "duration": 26450800
           }
-        ]
+        ],
+        "after": [
+
+        ],
+        "status": "passed",
+        "duration": 887305400
       },
       {
         "id": "consultar-os-dados-de-um-endereço-a-partir-de-um-cep;consulta-cep-inválido",
@@ -74,26 +87,30 @@
         "before": [
           {
             "match": {
-              "location": "features/support/hooks.rb:1"
+              "location": "features/support/hooks.rb:4"
             },
             "result": {
               "status": "passed",
-              "duration": 10700
-            }
+              "duration": 15300
+            },
+            "status": "passed",
+            "duration": 15300
           }
         ],
         "steps": [
           {
             "keyword": "Dado ",
-            "name": "o endereço da API para consultar o CEP \"00000001\"",
+            "name": "o endereço da API para consultar o CEP &quot;00000001&quot;",
             "line": 14,
             "match": {
               "location": "features/step_definitions/consultar_steps.rb:1"
             },
             "result": {
               "status": "passed",
-              "duration": 26000
-            }
+              "duration": 66000
+            },
+            "status": "passed",
+            "duration": 66000
           },
           {
             "keyword": "Quando ",
@@ -104,8 +121,10 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1300161900
-            }
+              "duration": 2780639800
+            },
+            "status": "passed",
+            "duration": 2780639800
           },
           {
             "keyword": "Então ",
@@ -116,11 +135,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 353100
-            }
+              "duration": 720600
+            },
+            "status": "passed",
+            "duration": 720600
           }
-        ]
+        ],
+        "after": [
+
+        ],
+        "status": "passed",
+        "duration": 2781441700
       }
-    ]
+    ],
+    "status": "working",
+    "duration": 3668747100
   }
 ]
