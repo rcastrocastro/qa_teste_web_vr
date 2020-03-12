@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: raphaelcastro35/ruby_gems_fleury:0.2.0
+    parallelism: 3
     steps:
       - checkout
       - run: 
